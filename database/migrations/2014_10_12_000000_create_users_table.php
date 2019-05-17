@@ -19,6 +19,8 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            //imagem vai armazernar um string do caminho e pode conter apenas 100 caracteres
+            $table->string('image', 100)->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
