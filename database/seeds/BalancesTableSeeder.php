@@ -13,8 +13,8 @@ class BalancesTableSeeder extends Seeder
     public function run()
     {
         Balance::create([
-            'user_id' => 1,
-            'amount' => 555,
+            'user_id' => 4,
+            'amount' => 555.99,
         ]);
     }
 }
